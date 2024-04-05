@@ -1,0 +1,98 @@
+<div class="row">
+    <div class="col-10">
+        <p class="header">Featured Items</p>
+        <mat-card class="card example-card">
+            <div class="g-0">
+              <div class="col-md-4 example-header-image">
+                <img class="img-fluid rounded-start" mat-card-image src="assets/images/1.png">
+              </div>
+              <div class="col-md-8" style="padding-left: 30px;">
+                <div class="card-body">
+                    <div style="display: flex;">
+                        <h1 class="card-title">STORM SKIN</h1>
+                        <mat-icon><img src="assets/images/energy.png" style="width: 24px;"></mat-icon>
+                    </div>
+                   
+                    <mat-card-subtitle>Description</mat-card-subtitle>
+                  <p class="card-text">
+                    Representing her home country of South Korea, Jett's agile and evasive fighting style lets her
+                    take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.
+                  </p>
+                  <mat-card-subtitle>Ability Skin</mat-card-subtitle>
+                  <div class="icon">
+                    <img src="assets/images/1940.png">
+                    <img src="assets/images/1941.png">
+                    <img src="assets/images/1942.png">
+                  </div>
+
+                  <div class="coin">
+                    <mat-icon>
+                        <img src="assets/images/simsek.png" style="width: 14px;">
+                    </mat-icon>
+                    <span style="color: #F6CE0E; font-size: 14px; margin-top: 5px; font-weight: 500;">0,094 ETH</span>
+                </div>
+
+                  <mat-card-content>
+                    <button class="button" mat-button>
+                        <mat-icon>
+                            <img src="assets/images/icon.png" style="width: 18px;">
+                        </mat-icon>
+                        Buy NFT
+                    </button>
+                </mat-card-content>
+                </div>
+              </div>
+            </div>
+          </mat-card>
+    </div>
+
+    <div class="col-2">
+        <p class="header">Popular Items</p>
+        <div class="content-grid " cols="2">
+            <mat-card class="card example-card2" *ngFor="let item of cardItems">
+                <div class="g-1">
+                  <div class="col-md-4 example-header-image2">
+                    <img class="img-fluid rounded-start" mat-card-image src="{{item.image}}" >
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                            <h4 class="card-title">{{item.name}}</h4>
+                        <mat-card-subtitle>Description</mat-card-subtitle>
+                      <p class="card-text" style="font-size: 12px;">
+                        {{item.main}}
+                      </p>
+    
+                      <div class="coin2">
+                     
+                            <img src="assets/images/simsek.png" style="width: 10px;">
+                        
+                        <span style="color: #F6CE0E; font-size: 12px;  font-weight: 500;">{{item.pay}}</span>
+                    </div>
+    
+                      <mat-card-content class="button3">
+                        <button mat-button class="button2">
+                            <mat-icon>
+                                <img src="assets/images/icon.png" style="width: 18px;">
+                            </mat-icon>
+                            Buy NFT
+                        </button>
+                    </mat-card-content>
+                    </div>
+                  </div>
+                </div>
+              </mat-card>
+        </div>
+     
+    </div>
+
+</div>
+
+<app-card-main></app-card-main>
+
+<app-footer></app-footer>
+
+
+
+
+
+

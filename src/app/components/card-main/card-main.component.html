@@ -1,0 +1,41 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="content-grid">
+        <div class="col" *ngFor="let item of cardItems">
+            <p class="header">{{item.headers}}</p>
+            
+                <mat-card class="card example-card2">
+                    <div class="g-1">
+                        <div class="col-md-4 example-header-image2">
+                            <img class="img-fluid rounded-start" mat-card-image src="{{item.image}}">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">{{item.name}}</h4>
+                                <mat-card-subtitle>Description</mat-card-subtitle>
+                                <p class="card-text" style="font-size: 12px;">
+                                    {{item.main}}
+                                </p>
+    
+                                <div class="coin2">
+    
+                                    <img src="assets/images/simsek.png" style="width: 10px;">
+    
+                                    <span style="color: #F6CE0E; font-size: 12px;  font-weight: 500;">{{item.pay}}</span>
+                                </div>
+    
+                                <mat-card-content class="button3">
+                                    <button mat-button class="button2">
+                                        <mat-icon>
+                                            <img src="assets/images/icon.png" style="width: 18px;">
+                                        </mat-icon>
+                                        Buy NFT
+                                    </button>
+                                </mat-card-content>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+    </div>
+   
+    </div>
